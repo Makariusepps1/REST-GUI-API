@@ -1,0 +1,5 @@
+In this assignment I built a desktop purchase form with Tkinter and a small Flask API behind it. The form collects a product ID, description, customer name, email, price, and a checkbox for online or in-store. Before anything is sent, it validates locally: every field must be filled in, the email has to contain an @, and the price must be a number no greater than $1,000. Then the app turns the form into JSON, POSTs it to the API, and shows the API's confirmation as a popup.
+
+What surprised me was that the hardest part, again, was not the code but the setup. The Run button used the system Python instead of the virtual environment, so Flask couldn't be found even though it was installed. And the API terminal looked frozen when it was just busy running the server — I needed a second terminal for the window.
+
+I understand better now how a frontend and a backend talk: the form, the JSON, and the API are three separate pieces that have to agree on the same shape. I want to learn more about saving the purchases somewhere that lasts, instead of just printing them.
